@@ -1,6 +1,11 @@
 This file was created by IntelliJ IDEA 10.5.2 for binding GitHub repository
 
-This repo is a JackH79's(84376952260f4610cd857d8eee54fff1c4f27c22) clone with few modifications to make it work with awesome 3.4.11-2 from AUR.
+This repo is a JackH79's .dotfiles (84376952260f4610cd857d8eee54fff1c4f27c22) awesome part clone,
+with few modifications to make it work with awesome 3.4.11-2 from AUR:
+
 1. get rid of shifty, because I didn't get what advantage it brings.
 2. replaced all ***=wibox.widget.textbox() with ***=widget({type="textbox"})
 3. obviously will add few widgets to my taste
+4. menu not ready yet
+
+original look: https://github.com/JackH79/.dotfiles/raw/master/dirty.png
