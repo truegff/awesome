@@ -2,7 +2,7 @@
 require("awful")
 require("awful.autofocus")
 require("awful.rules")
---require("wibox")
+require("wibox")
 require("beautiful")
 require("naughty")
 require("vicious")
@@ -19,6 +19,7 @@ modkey		= "Mod4"
 altkey		= "Mod1"
 
 
+beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 --require("01_colours")
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
