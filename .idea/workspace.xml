@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68fe6a88-d515-405f-b013-1debb29d1c4a" name="Default" comment="README file upd.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-    </list>
+    <list default="true" id="68fe6a88-d515-405f-b013-1debb29d1c4a" name="Default" comment="README file upd." />
     <ignored path="awesome.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -335,7 +333,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="19" y="122" width="779" height="701" extended-state="0" />
+    <frame x="20" y="123" width="779" height="701" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32735425" sideWeight="0.49590164" order="7" side_tool="false" content_ui="tabs" />
