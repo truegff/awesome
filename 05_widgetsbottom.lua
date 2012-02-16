@@ -12,7 +12,7 @@ mpdwidget = widget({ type = "textbox" })
 vicious.register(mpdwidget, vicious.widgets.mpd,
   function(widget, args)
     if args["{state}"] == "Stop" then
-      return ""
+      return "" .. colcya .. "mpd" .. coldef .. ""
     elseif args["{state}"] == "Play" then
       return "" .. colcya .. "mpd " .. coldef .. colbwhi .. args["{Artist}"] .. " - " .. args["{Album}"] .. " - " .. args["{Title}"] .. coldef .. ""
     elseif args["{state}"] == "Pause" then
@@ -20,8 +20,10 @@ vicious.register(mpdwidget, vicious.widgets.mpd,
     end
   end, refresh_delay)
 
-mpdwidget:buttons(awful.util.table.join(awful.button({}, 1, function() awful.util.spawn("mpc toggle", false) end),
-  awful.button({}, 2, function() awful.util.spawn(terminal .. " -e ncmpcpp") end),
+mpdwidget:buttons(awful.util.table.join(
+  awful.button({}, 1, function() awful.util.spawn("mpc toggle", 
+false) end),
+  awful.button({}, 3, function() awful.util.spawn(terminal .. " -e ncmpcpp") end),
   awful.button({}, 4, function() awful.util.spawn("mpc prev", false) end),
   awful.button({}, 5, function() awful.util.spawn("mpc next", false) end)))
 

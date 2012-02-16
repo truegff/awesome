@@ -12,14 +12,14 @@ layouts =
   awful.layout.suit.spiral,
   awful.layout.suit.spiral.dwindle,
   awful.layout.suit.max,
-  awful.layout.suit.max.fullscreen,
+--  awful.layout.suit.max.fullscreen,
   awful.layout.suit.magnifier
 }
 
 -- Tags
 tags = {
-  names = { "main", "www", "term", "ide", "mus", "etc" },
-  layout = { layouts[1], layouts[1], layouts[4], layouts[1], layouts[1], layouts[1] }
+  names = { "main", "www", "term", "ide", "git", "etc" },
+  layout = { layouts[1], layouts[10], layouts[4], layouts[10], layouts[4], layouts[1] }
 }
 for s = 1, screen.count() do
   -- Each screen has its own tag table.

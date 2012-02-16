@@ -23,8 +23,33 @@ awful.rules.rules = {
     rule = { class = "gimp" },
     properties = { floating = true }
   },
-  -- Set Firefox to always map on tags number 2 of screen 1.
-  -- { rule = { class = "Firefox" },
-  --   properties = { tag = tags[1][2] } },
+  {
+    rule = { class = "Firefox" },
+    properties = { tag = tags[1][2] }
+  },
+  {
+    rule = { name = "IDEA" },
+    properties = { tag = tags[1][4] }
+  },
+  {
+    rule = { class = "URxvt" },
+    properties = { tag = tags[1][3] }
+  },
+  {
+    rule = { class  = "xterm" },
+    properties = { tag = tags[1][3] }
+  },
+  {
+    rule = { class = "Gitk" },
+    properties = { tag = tags[1][5] }
+  },
+  {
+    rule = { class = "Git-gui" },
+    properties = { tag = tags[1][5] }
+  },
+  {
+    rule = { class = "Skype" },
+    properties = { tag = tags[1][2] }
+  }
 }
 -- }}}

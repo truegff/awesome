@@ -5,10 +5,10 @@ root.buttons(awful.util.table.join(awful.button({}, 3, function() mymainmenu:tog
 -- }}}
 
 -- {{{ Key bindings
-globalkeys = awful.util.table.join(awful.key({ modkey, }, "Left", awful.tag.viewprev),
+globalkeys = awful.util.table.join(
+  awful.key({ modkey, }, "Left", awful.tag.viewprev),
   awful.key({ modkey, }, "Right", awful.tag.viewnext),
   awful.key({ modkey, }, "Escape", awful.tag.history.restore),
-
   awful.key({ modkey, }, "j",
     function()
       awful.client.focus.byidx(1)
@@ -19,7 +19,14 @@ globalkeys = awful.util.table.join(awful.key({ modkey, }, "Left", awful.tag.view
       awful.client.focus.byidx(-1)
       if client.focus then client.focus:raise() end
     end),
-  awful.key({ modkey, }, "w", function() mymainmenu:show({ keygrabber = true }) end),
+  awful.key({ modkey, }, "w",
+    function()
+      mymainmenu:show({ keygrabber = true })
+    end
+  ),
+
+  -- Keyboard layout switching
+  awful.key({ "Mod1" }, "Shift_L", function () kbdcfg.switch() end),
 
   -- Layout manipulation
   awful.key({ modkey, "Shift" }, "j", function() awful.client.swap.byidx(1) end),

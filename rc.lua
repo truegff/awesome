@@ -9,14 +9,15 @@ require("vicious")
 require("00_errorhandling")
 
 -- DEFAULTS
-terminal = "xterm"
+--terminal = "xterm"
+terminal = "urxvt"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 browser = "firefox"
 modkey = "Mod4"
 altkey = "Mod1"
 
-beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+beautiful.init("/usr/share/awesome/themes/custom/theme.lua")
 
 require("01_colours")
 require("02_tags")

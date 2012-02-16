@@ -15,12 +15,15 @@ myinfobox = {}
 mypromptbox = {}
 mylayoutbox = {}
 mytaglist = {}
-mytaglist.buttons = awful.util.table.join(awful.button({}, 1, awful.tag.viewonly),
-  awful.button({ modkey }, 1, awful.client.movetotag),
-  awful.button({}, 3, awful.tag.viewtoggle),
-  awful.button({ modkey }, 3, awful.client.toggletag),
-  awful.button({}, 4, awful.tag.viewnext),
-  awful.button({}, 5, awful.tag.viewprev))
+mytaglist.buttons =
+  awful.util.table.join(
+    awful.button({}, 1, awful.tag.viewonly),
+    awful.button({ modkey }, 1, awful.client.movetotag),
+    awful.button({}, 3, awful.tag.viewtoggle),
+    awful.button({ modkey }, 3, awful.client.toggletag),
+    awful.button({}, 4, awful.tag.viewnext),
+    awful.button({}, 5, awful.tag.viewprev)
+  )
 mytasklist = {}
 mytasklist.buttons = awful.util.table.join(awful.button({}, 1, function(c)
   if c == client.focus then
@@ -77,13 +80,21 @@ for s = 1, screen.count() do
   mywibox[s].widgets = {
     {
       mylauncher,
+      separator,
       mytaglist[s],
+      separator,
       mypromptbox[s],
+      separator,
       layout = awful.widget.layout.horizontal.leftright
     },
     mylayoutbox[s],
+    separator,
     mytextclock,
+    separator,
+    kbdcfg.widget,
+    separator,
     s == 1 and mysystray or nil,
+    separator,
     mytasklist[s],
     layout = awful.widget.layout.horizontal.rightleft
   }
@@ -110,8 +121,8 @@ for s = 1, screen.count() do
     separator,
     memwidget,
     separator,
-    --fsrwidget,
     fshwidget,
+    fsrwidget,
     layout=awful.widget.layout.horizontal.rightleft
   }
 end
