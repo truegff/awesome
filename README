@@ -6,6 +6,9 @@ with few modifications to make it work with awesome 3.4.11-2 from AUR:
 1. get rid of shifty, because I didn't get what advantage it brings.
 2. replaced all ***=wibox.widget.textbox() with ***=widget({type="textbox"})
 3. obviously will add few widgets to my taste
-4. menu not ready yet
+4. used menu from terceiro's awesome-freedesktop repo. https://github.com/terceiro/awesome-freedesktop
+5. modified mpdwidget to make it never hide. changed mouse key binding from 2 to 3 to run ncmpcpp
+6. added keyboard layout changer to top right widget bar + key binding for it (Alt + Shift_L)
 
 original look: https://github.com/JackH79/.dotfiles/raw/master/dirty.png
+what it look like now: https://github.com/truegff/awesome/raw/master/sshot.png
