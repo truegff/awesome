@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="awesome lib">
-    <CLASSES />
-    <JAVADOC />
-    <SOURCES>
-      <root url="file:///usr/share/awesome/lib" />
-    </SOURCES>
-  </library>
-</component>
